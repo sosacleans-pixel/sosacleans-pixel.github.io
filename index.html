@@ -39,6 +39,47 @@
   <link rel="preload" href="fonts/poppins-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/work-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Structured data (no street address or phone by design) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://sosacleans.com/#website",
+        "url": "https://sosacleans.com/",
+        "name": "Sosa Cleans",
+        "inLanguage": "en-US",
+        "publisher": { "@id": "https://sosacleans.com/#org" }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://sosacleans.com/#org",
+        "name": "Sosa Cleans",
+        "alternateName": "Sosa Cleaning Services",
+        "legalName": "Sosa Cleaning Services Company",
+        "url": "https://sosacleans.com/",
+        "email": "sosacleans@gmail.com",
+        "logo": "https://sosacleans.com/img/sosa-cleans-logo.png",
+        "image": "https://sosacleans.com/img/og-image.jpg",
+        "slogan": "Cleaning Done Right!",
+        "description": "Residential and commercial cleaning, construction cleanup, vacation-rental turnovers and seasonal deep cleans in Salt Lake County and the Wasatch Front, Utah.",
+        "areaServed": [
+          { "@type": "AdministrativeArea", "name": "Salt Lake County, Utah" },
+          { "@type": "Place", "name": "Wasatch Front, Utah" }
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer service",
+          "email": "sosacleans@gmail.com",
+          "areaServed": "US-UT",
+          "availableLanguage": ["en"]
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
