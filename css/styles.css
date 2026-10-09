@@ -337,9 +337,9 @@ a:hover, a:focus-visible {
   /* Photo fills the whole hero behind the text */
   .hero-photo {
     position: absolute;
-    inset: 0;
+    top: 0; bottom: 0; right: 0; left: auto;
     z-index: -2;
-    width: 100%;
+    width: 62%;              /* photo panel on the right: less zoom, more of the scene shows */
     max-width: none;
     height: 100%;
     margin: 0;
@@ -349,7 +349,7 @@ a:hover, a:focus-visible {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 50% 22%;   /* keeps Salim's whole head in frame (he asked) */
+    object-position: 50% 30%;   /* head fully in frame, a little higher (Salim's ask) */
     border-radius: 0;
     box-shadow: none;
   }
@@ -361,11 +361,11 @@ a:hover, a:focus-visible {
     inset: 0;
     z-index: -1;
     background: linear-gradient(90deg,
-      rgba(16, 46, 76, 0.95) 0%,
-      rgba(16, 46, 76, 0.90) 34%,
-      rgba(16, 46, 76, 0.55) 48%,
-      rgba(16, 46, 76, 0.12) 62%,
-      rgba(16, 46, 76, 0) 72%);
+      rgba(16, 46, 76, 1) 0%,
+      rgba(16, 46, 76, 1) 38%,
+      rgba(16, 46, 76, 0.55) 46%,
+      rgba(16, 46, 76, 0.12) 56%,
+      rgba(16, 46, 76, 0) 64%);
   }
 
   .hero-text { max-width: min(480px, 42vw); }
