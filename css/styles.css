@@ -349,7 +349,7 @@ a:hover, a:focus-visible {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 50% 49%;   /* keeps the worker's head, hands, wand and spray in frame */
+    object-position: 50% 22%;   /* keeps Salim's whole head in frame (he asked) */
     border-radius: 0;
     box-shadow: none;
   }
