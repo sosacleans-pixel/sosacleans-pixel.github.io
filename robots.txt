@@ -1,0 +1,7 @@
+# REMOVE AT LAUNCH: the two rules below block ALL crawlers while the site is a draft.
+# At launch, replace the whole file with these three lines (without the leading "# "):
+# User-agent: *
+# Allow: /
+# Sitemap: https://sosacleans.com/sitemap.xml
+User-agent: *
+Disallow: /
