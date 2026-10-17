@@ -138,13 +138,15 @@ a:hover, a:focus-visible {
   color: var(--green-dark);
   margin: 0 0 0.5rem;
 }
-.hero h1 {
+.hero-tagline {
+  font-family: var(--font-head);
   font-size: clamp(2.25rem, 8vw, 3.75rem);
   font-weight: 700;
   letter-spacing: -0.015em;
-  margin-bottom: 0.4em;
+  margin: 0 0 0.35em;
+  line-height: 1.1;
 }
-.hero h1::after {
+.hero-tagline::after {
   content: "";
   display: block;
   width: 4rem;
@@ -152,6 +154,14 @@ a:hover, a:focus-visible {
   margin-top: 0.35em;
   border-radius: 3px;
   background: var(--green);
+}
+.hero h1 {
+  font-size: clamp(1.2rem, 3.2vw, 1.55rem);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.35;
+  margin: 0 0 0.65em;
+  color: var(--navy);
 }
 .hero .subline {
   font-size: clamp(1.1rem, 2.6vw, 1.3rem);
@@ -370,10 +380,15 @@ a:hover, a:focus-visible {
 
   .hero-text { max-width: min(480px, 42vw); }
   .hero .eyebrow { color: #74C466; }  /* lighter tint of the brand green: keeps AA contrast (>=4.5:1) over the scrim */
-  .hero h1 {
+  .hero-tagline {
     color: var(--white);
     font-size: clamp(2.75rem, 4.2vw, 3.75rem);
     text-shadow: 0 2px 18px rgba(16, 46, 76, 0.45);
+  }
+  .hero h1 {
+    color: var(--white);
+    font-size: clamp(1.25rem, 2vw, 1.55rem);
+    text-shadow: 0 1px 12px rgba(16, 46, 76, 0.35);
   }
   .hero .subline {
     color: var(--white);
