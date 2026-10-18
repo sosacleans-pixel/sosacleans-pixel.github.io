@@ -796,3 +796,7 @@ a:hover, a:focus-visible {
   #main .area-section { padding: 4.5rem 0; }
 }
 #main .contact .kicker { margin-bottom: 0.9rem; }
+
+/* Footer privacy note */
+.site-footer--rich .footer-privacy { margin-top: 0.5rem; font-size: 0.82rem; color: rgba(255, 255, 255, 0.62); }
+.site-footer--rich .footer-privacy a { color: inherit; text-decoration: underline; }
